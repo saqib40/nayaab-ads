@@ -358,7 +358,7 @@ const Beat5StarkCard: React.FC = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: 24,
+          gap: 8,
           width: "100%",
         }}
       >
@@ -366,9 +366,9 @@ const Beat5StarkCard: React.FC = () => {
           text="DORAEMON"
           startFrame={0}
           framesPerChar={2}
-          fontSize={44}
-          color="#666666"
-          letterSpacing="0.32em"
+          fontSize={78}
+          color={VICELAND_BLACK}
+          letterSpacing="-0.02em"
         />
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <div
@@ -410,19 +410,22 @@ const Beat5StarkCard: React.FC = () => {
  */
 const Beat6OutroCard: React.FC = () => {
   const frame = useCurrentFrame();
+  const headlineStyle: React.CSSProperties = {
+    fontFamily: VICELAND_FONT,
+    fontWeight: 900,
+    fontSize: 76,
+    letterSpacing: "-0.02em",
+    lineHeight: 1.02,
+    color: VICELAND_BLACK,
+    textTransform: "uppercase",
+  };
 
   return (
     <StarkCard>
-      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <div
           style={{
-            fontFamily: VICELAND_FONT,
-            fontWeight: 900,
-            fontSize: 76,
-            letterSpacing: "-0.02em",
-            lineHeight: 0.95,
-            color: VICELAND_BLACK,
-            textTransform: "uppercase",
+            ...headlineStyle,
             visibility: frame >= 0 ? "visible" : "hidden",
           }}
         >
@@ -430,17 +433,19 @@ const Beat6OutroCard: React.FC = () => {
         </div>
         <div
           style={{
-            fontFamily: VICELAND_FONT,
-            fontWeight: 900,
-            fontSize: 52,
-            lineHeight: 1.0,
-            letterSpacing: "-0.01em",
-            color: "#444444",
-            textTransform: "uppercase",
+            ...headlineStyle,
             visibility: frame >= 20 ? "visible" : "hidden",
           }}
         >
-          TO LIVE YOUR TERRIBLE LIFE.
+          TO LIVE YOUR
+        </div>
+        <div
+          style={{
+            ...headlineStyle,
+            visibility: frame >= 40 ? "visible" : "hidden",
+          }}
+        >
+          TERRIBLE LIFE
         </div>
       </div>
     </StarkCard>

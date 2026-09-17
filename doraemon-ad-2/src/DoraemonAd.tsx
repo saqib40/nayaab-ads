@@ -116,7 +116,7 @@ const Intro: React.FC = () => (
         lines={[
           {text: "THIS", at: 4},
           {text: "IS", at: 18},
-          {text: "ANKIT.", at: 32},
+          {text: "ANKIT", at: 32},
         ]}
         fontSize={88}
         color="#FFFFFF"
@@ -162,7 +162,7 @@ const AnkitStory: React.FC = () => {
             lines={[
               {text: "DORAEMON CUT ANKIT'S BUILD", at: 0},
               {text: "FROM TWENTY MINUTES", at: 20},
-              {text: "TO FOUR SECONDS.", at: 40},
+              {text: "TO FOUR SECONDS", at: 40},
             ]}
             fontSize={44}
             color="#FFFFFF"
@@ -188,7 +188,7 @@ const AnkitStory: React.FC = () => {
           <RevealLines
             lines={[
               {text: "HIS TESTS", at: 114},
-              {text: "PASSED.", at: 126},
+              {text: "PASSED", at: 126},
             ]}
             fontSize={52}
           />
@@ -205,7 +205,7 @@ const AnkitStory: React.FC = () => {
             lines={[
               {text: "HIS STOMACH", at: 142},
               {text: "NEVER HAD", at: 156},
-              {text: "A CHANCE.", at: 170},
+              {text: "A CHANCE", at: 170},
             ]}
             fontSize={38}
             color="#333333"
@@ -240,7 +240,7 @@ const CiCard: React.FC = () => (
       lines={[
         {text: "CI DOESN'T", at: 0},
         {text: "UNDERSTAND", at: 20},
-        {text: "YOUR CODE.", at: 40},
+        {text: "YOUR CODE", at: 40},
       ]}
       fontSize={88}
       gap={14}
@@ -261,7 +261,7 @@ const DoraemonCard: React.FC = () => {
         }}
       >
         <RevealLines
-          lines={[{text: "DORAEMON DOES.", at: 18}]}
+          lines={[{text: "DORAEMON DOES", at: 18}]}
           fontSize={88}
         />
       </div>
@@ -275,7 +275,7 @@ const PunchlineCard: React.FC = () => (
       lines={[
         {text: "STOP WAITING ON BUILDS", at: 0},
         {text: "TO LIVE YOUR", at: 20},
-        {text: "TERRIBLE LIFE.", at: 36},
+        {text: "TERRIBLE LIFE", at: 36},
       ]}
       fontSize={72}
       gap={12}
